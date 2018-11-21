@@ -1,5 +1,6 @@
 # 《计算机程序的构造和解释》---SICP学习记录
-
+>>[![MIT license](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/Perry961002/Learning-notes-of-SICP/blob/master/LICENSE)
+ 
 <p align="center">
   <img src="http://groups.csail.mit.edu/mac/classes/6.001/abelson-sussman-lectures/wizard.jpg" alt="SICP"/>
 </p>
