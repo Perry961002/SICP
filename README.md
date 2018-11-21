@@ -10,7 +10,7 @@
 
 ## 配置环境
 
-- 采用了Chez Scheme作为解释器, 从[这里](https://www.scheme.com/download/)下载安装并配置环境变量
+- 采用了Chez Scheme作为解释器, 从[这里](https://www.scheme.com/download/)下载安装并配置环境变量, [这里](https://github.com/DeathKing/yast-cn)提供了Scheme的中文入门教程
 
 - 到这里就可以在DOS环境下进行程序编写, 但为了方便可以使用VS Code
     - [VS Code下载](https://code.visualstudio.com/), 安装之后为VS Code扩展`Code Runner`和`vscode-scheme`插件
