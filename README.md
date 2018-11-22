@@ -19,3 +19,10 @@
     - 在VS Code的设置中搜索`code-runner.executorMapByFileExtension`, 在最后一行追加内容`".scm": "scheme"`, 安装好后重启一下VS Code这样就能在右上角看见一个三角形了，打开文件点击就能编译执行
 
     - 现在还不能在终端中输入命令观察效果, 解决方法是依次打开: `文件>首选项>设置>用户设置>拓展>Run Code Configuration`, 找到 `Run In Terminal` 打上勾, 这样运行的程序就会运行在集成控制台上
+
+## 案例和习题代码
+
+| 章节(Chapter) |  01  |  02  |  03  |  04  |  05  |
+|:-------------:|:----:|:----:|:----:|:----:|:----:|
+| 案例(Example) | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap1/example) |  --- | --- | --- | --- |
+| 习题(Exercises) | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap1/exercise)  | --- | --- | --- | --- |
