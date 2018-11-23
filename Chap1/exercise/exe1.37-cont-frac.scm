@@ -3,8 +3,8 @@
     (define (fun i)
         (if (= i k)
             (/ (N k) (D k))
-            (/ (N k) 
-               (+ (D k)
+            (/ (N i) 
+               (+ (D i)
                   (fun (+ i 1))))))
     (fun 1))
 
@@ -21,6 +21,6 @@
         (if (= i 1)
             result
             (iter (- i 1) (/ (N (- i 1))
-                             (+ (N (- i 1))
+                             (+ (D (- i 1))
                                 result)))))
     (iter k (/ (N k) (D k))))
