@@ -22,6 +22,8 @@
 
 ## 案例和习题代码
 
+- 如果代码中有错误或者有疑惑, 欢迎通过[Issues](https://github.com/Perry961002/Learning-notes-of-SICP/issues)或者邮箱Perry961002@163.com联系
+
 | 章节(Chapter) |  01  |  02  |  03  |  04  |  05  |
 |:-------------:|:----:|:----:|:----:|:----:|:----:|
 | 案例(Example) | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap1/example) |  --- | --- | --- | --- |
