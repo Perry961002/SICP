@@ -1,0 +1,31 @@
+;线段的构造和选择函数, 基于点定义线段
+(define (make-segment start end)
+    (cons start end))
+(define (strat-segment segment)
+    (car segment))
+(define (end-segment segment)
+    (cdr segment))
+
+;点的定义和选择函数
+(define (make-point x y)
+    (cons x y))
+(define (x-point p)
+    (car p))
+(define (y-point p)
+    (cdr p))
+;打印点的方法
+(define (print-point p)
+    (newline)
+    (display "(")
+    (display (x-point p))
+    (display ",")
+    (display (y-point p))
+    (display ")"))
+;得到线段的中点
+(define (midpoint-segment segment)
+    (let ((start (strat-segment segment))
+          (end (end-segment segment)))
+         (make-point (/ (+ (x-point start) (x-point end))
+                        2.0)
+                     (/ (+ (y-point start) (y-point end))
+                        2.0))))
