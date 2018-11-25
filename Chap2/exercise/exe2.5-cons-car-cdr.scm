@@ -1,0 +1,21 @@
+(load "Chap1\\exercise\\exe1.16-fast-expt.scm")
+;一种过程性表示
+(define (cons a b)
+    (define (dispatch m)
+        (if (= m 0)
+            (fast-expt 2 a)
+            (fast-expt 3 b)))
+    dispatch)
+(define (car z)
+    (z 0))
+(define (cdr z)
+    (z 1))
+
+;另一种过程性的表示
+(define (cons a b)
+    (lambda (m) (m (fast-expt 2 a)
+                   (fast-expt 3 b))))
+(define (car z)
+    (z (lambda (p q) p)))
+(define (cdr z)
+    (z (lambda (p q) q)))
