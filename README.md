@@ -26,5 +26,5 @@
 
 | 章节(Chapter) |  01  |  02  |  03  |  04  |  05  |
 |:-------------:|:----:|:----:|:----:|:----:|:----:|
-| 案例(Example) | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap1/example) |  --- | --- | --- | --- |
-| 习题(Exercises) | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap1/exercise)  | --- | --- | --- | --- |
+| 案例(Example) | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap1/example) |  [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap2/example) | --- | --- | --- |
+| 习题(Exercises) | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap1/exercise)  | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap2/exercise) | --- | --- | --- |
