@@ -30,8 +30,13 @@
 (define one (lambda (f) (lambda (x) (f x))))
 (define two (lambda (f) (lambda (x) (f (f x)))))
 ;现在可以知道这里的数字表示了运算的次数
-;那么 n + m表示在m次运算的基础上进行n次运算
+;那么 n + m表示在m + n次运算
 (define (+ m n)
     (lambda (f)
         (lambda (x)
             ((m f) ((n f) x)))))
+;给出一个乘法的定义
+(define (* m n)
+    (lambda (f)
+        (lambda (x)
+            ((m (n f)) x))))
