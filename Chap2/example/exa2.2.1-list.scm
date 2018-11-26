@@ -21,3 +21,10 @@
     (if (null? list1)
         list2
         (cons (car list1) (append (cdr list1) list2))))
+
+;对表的映射map, scheme已经定义
+(define (map proc items)
+    (if (null? items)
+        '()
+        (cons (proc (car items))
+              (map proc (cdr items)))))
