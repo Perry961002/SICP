@@ -1,3 +1,4 @@
+(load "Chap2\\exercise\\exe2.7-make-interval.scm")
 ;区间加法运算
 (define (add-interval x y)
     (make-interval (+ (lower-bound x) (lower-bound y)
