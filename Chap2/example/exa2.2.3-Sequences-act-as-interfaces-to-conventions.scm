@@ -109,3 +109,12 @@
                         (map (lambda (j) (list i j))
                              (enumerate-interval 1 (- i 1))))
                     (enumerate-interval 1 n)))))
+
+;得到s的所有排序
+(define (permutations s)
+    (if (null? s)
+        (list '())
+        (flatmap (lambda (x)
+                    (map (lambda (p) (cons x p))
+                         (permutations (remove x s))))
+                 s)))
