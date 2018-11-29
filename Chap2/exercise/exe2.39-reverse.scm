@@ -2,8 +2,8 @@
 
 ;重写reverse过程
 ;法一:
-;(define (reverse sequence)
- ;   (fold-right (lambda (x y) (append y (list x))) '() sequence))
+(define (reverse sequence)
+    (fold-right (lambda (x y) (append y (list x))) '() sequence))
 
 ;法二:
 (define (reverse sequence)
