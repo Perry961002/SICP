@@ -82,3 +82,30 @@
                 1
                 (map square
                      (filter odd? sequence))))
+;-----------------------------------------------------------------------------
+
+;嵌套映射
+(load "Chap2\\exercise\\exe2.36-accumulate-n.scm")
+(load "Chap1\\example\\exa1.2.6-prime.scm")
+
+;将映射的结果累积起来
+(define (flatmap proc seq)
+    (accumulate append '() (map proc seq)))
+
+;过滤序对
+(define (prime-sum? pair)
+    (prime? (+ (car pair) (cadr pair))))
+
+;合成3元组
+(define (make-pair-sum pair)
+    (list (car pair) (cadr pair) (+ (car pair) (cadr pair))))
+
+;完整的过程
+(define (prime-sum-pairs n)
+    (map make-pair-sum 
+         (filter prime-sum?
+                 (flatmap
+                    (lambda (i)
+                        (map (lambda (j) (list i j))
+                             (enumerate-interval 1 (- i 1))))
+                    (enumerate-interval 1 n)))))
