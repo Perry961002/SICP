@@ -1,7 +1,7 @@
 # 《计算机程序的构造和解释》---SICP学习记录
 >> ![](https://img.shields.io/badge/language-Scheme-orange.svg) [![MIT license](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/Perry961002/Learning-notes-of-SICP/blob/master/LICENSE)
 
-## A language isn’t something you learn so much as something you join.
+## A language isn’t something you learn so much as something you join. (语言不是你学习的东西，而是你加入的东西。)
 
 <p align="center">
   <img src="http://groups.csail.mit.edu/mac/classes/6.001/abelson-sussman-lectures/wizard.jpg" alt="SICP"/>
@@ -17,13 +17,13 @@
 
 ## 一点建议
 
-- 首先本书是一本非常经典的教材，也是非常有难度的书，所有想读完甚至是掌握精髓是很需要下功夫的
+- 首先本书是一本非常经典的教材，也是非常有难度的书，所有想读完甚至是掌握精髓是很需要下功夫的。
 
 - 这本书的很多内容、习题需要仔细揣摩才能领略其意义，所以看这本书一定不要心急。 其次，在阅读时，请务必全神贯注，并使用一整段的时间来看和完成习题，否则很难有所收获。
 
 - 最后想说持续的学习总是很苦，所以当你学习SICP时觉得累、烦躁了，不妨停下来听听音乐，或者出去走走，总之一切放松的方式都行，但请记得这里还有许多富有趣味的题目亟待解决，它们等待你重新燃起热情去战胜。
 
-以上与所有的SICP的学习者共勉！！
+以上与所有的SICP的学习者共勉！！:tada:
 
 ## 配置环境
 
