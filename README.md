@@ -1,7 +1,7 @@
 # 《计算机程序的构造和解释》---SICP学习记录
 >> ![](https://img.shields.io/badge/language-Scheme-orange.svg) [![MIT license](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/Perry961002/Learning-notes-of-SICP/blob/master/LICENSE)
 
-## A language isn’t something you learn so much as something you join. (语言不是你学习的东西，而是你加入的东西。)
+## A language isn’t something you learn so much as something you join. ( 语言不是你学习的东西，而是你加入的东西。)
 
 <p align="center">
   <img src="http://groups.csail.mit.edu/mac/classes/6.001/abelson-sussman-lectures/wizard.jpg" alt="SICP"/>
