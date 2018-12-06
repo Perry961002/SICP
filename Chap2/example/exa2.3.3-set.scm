@@ -66,7 +66,7 @@
           ((> x (entry tree))
            (element-of-set? x (right-branch tree)))))
 
-;插入jiedian
+;插入节点
 (define (adjoin-set x tree)
     (cond ((null? tree) (make-tree x '() '()))
           ((= x (entry tree)) tree)
@@ -78,3 +78,11 @@
            (make-tree (entry tree)
                       (left-branch tree)
                       (adjoin-set x (right-branch tree))))))
+;-----------------------------------------------------------------------------
+;集合与信息检索
+
+(define (lookup given-key set-of-records)
+    (cond ((null? set-of-records) #f)
+          ((equal? given-key (key (car set-of-records)))
+           (car set-of-records))
+          (else (lookup given-key (cdr set-of-records)))))
