@@ -41,3 +41,40 @@
                    (intersection-set (cdr set1) set2))
                   ((< x2 x1)
                    (intersection-set set1 (cdr set2)))))))
+;-------------------------------------------------------------------------
+;集合作为二叉树(BST)
+
+;用表来表示树，将节点标识为三个元素的表：本节点中的数据项，其左子树和右子树
+;用空表作为左子树或者右子树，就表示没有子树连接在那里
+
+;定义BST的抽象
+(define (entry tree) (car tree))
+
+(define (left-branch tree) (cadr tree))
+
+(define (right-branch tree) (caddr tree))
+
+(define (make-tree entry left right)
+    (list entry left right))
+
+;判断节点在不在树中
+(define (element-of-set? x tree)
+    (cond ((null? tree) #f)
+          ((= x (entry tree)) #t)
+          ((< x (entry tree))
+           (element-of-set? x (left-branch tree)))
+          ((> x (entry tree))
+           (element-of-set? x (right-branch tree)))))
+
+;插入jiedian
+(define (adjoin-set x tree)
+    (cond ((null? tree) (make-tree x '() '()))
+          ((= x (entry tree)) tree)
+          ((< x (entry tree))
+           (make-tree (entry tree)
+                      (adjoin-set x (left-branch tree))
+                      (right-branch tree)))
+          ((> x (entry tree))
+           (make-tree (entry tree)
+                      (left-branch tree)
+                      (adjoin-set x (right-branch tree))))))
