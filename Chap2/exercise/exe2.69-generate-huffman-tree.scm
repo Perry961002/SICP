@@ -1,5 +1,5 @@
 (load "Chap2\\example\\exa2.3.4-Huffman.scm")
-(load Chap2\\exercise\\exe2.67-decode.scm)
+(load "Chap2\\exercise\\exe2.67-decode.scm")
 
 ;以一个符号-频度对偶表为参数生成Huffman编码树
 (define (generate-huffman-tree pairs)
