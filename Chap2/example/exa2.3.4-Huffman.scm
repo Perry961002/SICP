@@ -23,7 +23,7 @@
 ;选择函数
 (define (left-branch tree) (car tree))
 
-(define (right-branch tree) (vadr tree))
+(define (right-branch tree) (cadr tree))
 
 (define (symbol tree)
     (if (leaf? tree)
