@@ -22,7 +22,7 @@
                         (if record
                             (set-cdr! record value)
                             (set-cdr! subtable
-                                      (cons (key-2 value)
+                                      (cons (cons key-2 value)
                                             (cdr subtable)))))
                     (set-cdr! local-table
                               (cons (list key-1
