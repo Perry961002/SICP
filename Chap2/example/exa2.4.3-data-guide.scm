@@ -82,3 +82,19 @@
 
 (define (make-from-mag-ang r a)
     ((get 'make-from-mag-ang 'polar) r a))
+;------------------------------------------------------------------
+;消息传递
+
+;将每一个数据对象表示为一个过程，它以操作的名字作为输入，能够执行指定的操作
+(define (make-from-real-imag x y)
+    (define (dispatch op)
+        (cond ((eq? op 'real-part) x)
+              ((eq? op 'imag-part) y)
+              ((eq? op 'magnitude)
+               (sqrt (+ (square x) (square y))))
+              ((eq? op 'angle) (atan y x))
+              (else
+                (error "Unknown op -- MAKE-FROM-REAL-IMAG" op))))
+    dispatch)
+
+(define (apply-generic op arg) (arg op))
