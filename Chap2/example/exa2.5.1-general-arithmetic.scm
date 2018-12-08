@@ -112,6 +112,10 @@
 ;-----------------------------------------------------
 ;处理复数的程序包
 (define (install-complex-package)
+    (put 'real-part '(complex) real-part)
+    (put 'imag-part '(complex) imag-part)
+    (put 'magnitude '(complex) magnitude)
+    (put 'angle '(complex) angle)
     (define (make-from-real-imag x y)
         ((get 'make-from-real-imag 'rectangular) x y))
     
@@ -159,4 +163,4 @@
     ((get 'make-from-real-imag 'complex) x y))
 
 (define (make-from-mag-ang r a)
-    ((get 'make-from-mag-ang 'complex) r a`))
+    ((get 'make-from-mag-ang 'complex) r a))
