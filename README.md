@@ -25,6 +25,12 @@
 
 以上与所有的SICP的学习者共勉！！:tada:
 
+## 我的时间线
+
+- Nov 20, 2018 ~ Nov 24, 2018 第一章-构造过程抽象
+
+- Nov 25, 2018 ~ Now
+
 ## 配置环境
 
 - 采用了Chez Scheme作为解释器，从[这个链接](https://www.scheme.com/download/)下载安装并配置环境变量，这里提供了[Scheme的中文入门教程](https://github.com/DeathKing/yast-cn)，对函数式编程有兴趣的话可以去读一下[这一篇文章](https://github.com/justinyhuang/Functional-Programming-For-The-Rest-of-Us-Cn/tree/master)。
