@@ -18,4 +18,4 @@
   'done)
 
 (define (raise x)
-    (apply-generic 'raise x))
+    ((get 'raise (type-tag x)) (contents x)))
