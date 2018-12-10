@@ -1,8 +1,8 @@
 (load "Chap3\\example\\exa3.3.3-table.scm")
 ;补充定义：
 (define coercion-table (make-table))
-(define get-conercion (operation-table 'lookup-proc))
-(define put-conercion (operation-table 'insert-proc!))
+(define get-coercion (operation-table 'lookup-proc))
+(define put-coercion (operation-table 'insert-proc!))
 (load "Chap2\\example\\exa2.5.2-combination-of-data-types.scm") ;apply-generic过程
 
 ;补充Louis定义的过程
@@ -33,8 +33,8 @@
                             (error "No method for these types" (list op type-tags))
                             (let ((a1 (car args))
                                   (a2 (cadr args))
-                                  (t1->t2 (get-conercion type1 type2))
-                                  (t2->t1 (get-conercion type2 type1)))
+                                  (t1->t2 (get-coercion type1 type2))
+                                  (t2->t1 (get-coercion type2 type1)))
                                 (cond (t1->t2
                                         (apply-generic op (t1->t2 a1) a2))
                                       (t2->t1
