@@ -1,7 +1,7 @@
 (load "Chap1\\example\\exa1.2.5-GCD.scm")
 (define random-init 1)
 (define (rand-update x)
-  (remainder (+ (* 93 x) 47) 4294967296))
+  (remainder (+ (* 5 x) 3) 4294967296))
 
 ;随机数
 (define rand
