@@ -29,3 +29,24 @@
 ;得到pi的近似值
 (define (estimate-pi trials)
     (sqrt (/ 6 (monte-carlo trials cesaro-test))))
+
+;-----------------------------------------------------------------------
+;不使用赋值的蒙特卡罗
+(define (estimate-pi trials)
+    (sqrt (/ 6 (random-gcd-test trials random-init))))
+
+(define (random-gcd-test trials initial-x)
+    (define (iter trials-remaining trials-passed x)
+        (let ((x1 (rand-update x)))
+            (let ((x2 (rand-update x1)))
+                (cond ((= trials-remaining 0)\
+                       (/ trials-passed trials))
+                      ((= (gcd x1 x2) 1)
+                       (iter (- trials-remaining 1)
+                             (+ trials-passed 1)
+                             x2))
+                      (else
+                        (iter (- trials-remaining 1)
+                              trials-passed
+                              x2))))))
+    (iter trials 0 initial-x))
