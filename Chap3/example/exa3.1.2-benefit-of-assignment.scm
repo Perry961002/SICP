@@ -1,7 +1,11 @@
 (load "Chap1\\example\\exa1.2.5-GCD.scm")
-(define random-init 1)
+
 (define (rand-update x)
-  (remainder (+ (* 5 x) 3) 4294967296))
+  (let ((a (expt 2 32))
+        (c 1103515245)
+        (m 12345))
+    (modulo (+ (* a x) c) m)))
+(define random-init 137)
 
 ;随机数
 (define rand
