@@ -41,3 +41,27 @@
 (w2 20) ;5
 ;虽然w1和w2都是对同样表达式的求值创建起来的东西，从这个角度可以说他们是同一的
 ;但是如果说在任何表达式里都可以用w1代替w2，而不会改变表达式的求值结果，那就不对了
+;------------------------------------------------------------------------------------------
+;命令式程序设计的缺陷
+
+;代换模型的阶乘过程
+(define (factorial n)
+    (define (iter counter product)
+        (if (> counter n)
+            product
+            (iter (+ counter 1)
+                  (* product counter))))
+    (iter 1 1))
+
+;用赋值方式重写阶乘过程
+(define (factorial n)
+    (let ((product 1)
+          (counter 1))
+        (define (iter)
+            (if (> counter n)
+                product
+                (begin (set! product (* product counter))
+                       (set! counter (+ counter 1))
+                       (iter))))
+        (iter)))
+;一般而言，带有赋值的程序将强迫人们去考虑赋值的相对顺序，以保证每个语句所用的是被修改变量的正确版本
