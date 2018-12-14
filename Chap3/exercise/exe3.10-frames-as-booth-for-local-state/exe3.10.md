@@ -1,0 +1,13 @@
+- 用lambda表达式改写make-withdraw过程
+
+```
+(define make-withdraw
+    (lambda (initial-amount)
+        ((lambda (balance)
+            (lambda (amount)
+                (if (>= balance amount)
+                    (begin (set! balance (- balance amount))
+                           balance)
+                    "Insufficient funds")))
+         initial-amount)))
+```
