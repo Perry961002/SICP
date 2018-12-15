@@ -1,0 +1,8 @@
+(define (quicksort L)
+    (if (null? L)
+        '()
+        (let ((small (quicksort (filter (lambda (x) (<= x (car L)))
+                                        (cdr L))))
+              (big (quicksort (filter (lambda (x) (> x (car L)))
+                                      (cdr L)))))
+            (append small (cons (car L) big)))))
