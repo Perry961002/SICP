@@ -1,0 +1,12 @@
+(define (have-cycle? x)
+    (define (next x)
+        (if (pair? x)
+            (cdr x)
+            '()))
+    (define (iter slow fast)
+        (cond ((not (pair? slow)) #f)
+              ((not (pair? fast)) #f)
+              ((eq? slow fast) #t)
+              (else
+                (iter (next slow) (next (next fast))))))
+    (iter x (next (next x))))
