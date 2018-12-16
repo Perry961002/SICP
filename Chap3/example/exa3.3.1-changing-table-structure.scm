@@ -4,3 +4,8 @@
         (set-car! new x)
         (set-cdr! new y)
         new))
+;---------------------------------------------
+;共享和相等
+(define (set-to-wow! x)
+    (set-car! (car x) 'wow)
+    x)
