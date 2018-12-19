@@ -52,3 +52,11 @@
 |:-------------:|:----:|:----:|:----:|:----:|:----:|
 | 案例(Example) | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap1/example) |  [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap2/example) | --- | --- | --- |
 | 习题(Exercises) | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap1/exercise)  | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap2/exercise) | --- | --- | --- |
+
+## Scheme实现几个经典算法
+
+- [快速排序(QuickSort)](https://github.com/Perry961002/Learning-notes-of-SICP/blob/master/little%20practice/quicksort.scm)
+
+- [归并排序(MergeSort)](https://github.com/Perry961002/Learning-notes-of-SICP/blob/master/little%20practice/merge-sort.scm)
+
+- [堆排序(HeapSort)](https://github.com/Perry961002/Learning-notes-of-SICP/blob/master/little%20practice/HeapSort.scm)
