@@ -188,16 +188,16 @@
         'ok))
 
 ;测试
-(define C (make-connector))
-(define F (make-connector))
-(celsius-fahrenheit-converter C F)
+;(define C (make-connector))
+;(define F (make-connector))
+;(celsius-fahrenheit-converter C F)
 
 ;安装监视器
-(probe "Celsius temp" C)
-(probe "Fahrenheit temp" F)
+;(probe "Celsius temp" C)
+;(probe "Fahrenheit temp" F)
 
-(set-value! C 25 'user)
+;(set-value! C 25 'user)
 ;(set-value! F 212 'user) ;==> Exception in error: invalid message argument (77 212)
 
-(forget-value! C 'user)
-(set-value! F 212 'user)
+;(forget-value! C 'user)
+;(set-value! F 212 'user)
