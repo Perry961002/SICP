@@ -18,7 +18,14 @@
 ; sum = 10
 
 ;(stream-ref y 7)
-; sum ＝ 136
+; 136
 
 ;(display-stream z)
-; sum ＝ 210
+; 10
+;15
+;45
+;55
+;105
+;120
+;190
+;210'done
