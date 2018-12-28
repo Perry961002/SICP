@@ -9,6 +9,13 @@
             (apply stream-map
                    (cons proc (map stream-cdr argstreams))))))
 
+(define (display-car x)
+  (display x)
+  (display "  "))
+
+  (define (display-top10 s)
+  (for-each (lambda (x) (display-car (stream-ref s x))) (range 0 9)))
+
 ;正整数流
 (define (integers-starting-from n)
     (stream-cons n (integers-starting-from (+ n 1))))
