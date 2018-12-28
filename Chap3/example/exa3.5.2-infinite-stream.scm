@@ -1,4 +1,13 @@
-;使用Racket，内置流的实现
+;使用Racket，内置流的实现，补充两个实现
+(define (stream-car stream) (stream-first stream))
+(define (stream-cdr stream) (stream-rest stream))
+(define (stream-map proc . argstreams)
+    (if (stream-empty? (car argstreams))
+        '()
+        (stream-cons
+            (apply proc (map stream-car argstreams))
+            (apply stream-map
+                   (cons proc (map stream-cdr argstreams))))))
 
 ;正整数流
 (define (integers-starting-from n)
@@ -25,7 +34,7 @@
 (define ones (stream-cons 1 ones))
 
 ;两个给定流的逐对元素之和
-(define (add-stream s1 s2)
+(define (add-streams s1 s2)
     (stream-map + s1 s2))
 
 ;将给定的常数乘到流中的每个项上
