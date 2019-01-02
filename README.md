@@ -33,6 +33,8 @@
 
 - Dec 12, 2018 ~ Dec 30, 2018 --- 第3章 《模块化、对象和状态》
 
+- Jan 1, 2019 ~ Now --- 第4章 《元语言抽象》
+
 ## 配置环境
 
 - 采用了Chez Scheme作为解释器，需要从[这个链接](https://www.scheme.com/download/)下载安装并配置环境变量，这里提供了[Scheme的中文入门教程](https://github.com/DeathKing/yast-cn)，对函数式编程有兴趣的话可以去读一下[这一篇文章](https://github.com/justinyhuang/Functional-Programming-For-The-Rest-of-Us-Cn/tree/master)。
