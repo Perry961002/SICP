@@ -18,7 +18,7 @@
                     (error "ELSE clause isn't last -- COND->IF" clauses))
                 (if (cond-extended-clause? first)
                     (make-if (cond-predicate first)
-                             (make-lambda (cond-predicate first) (cond-recipient first))
+                             (cons (cond-recipient first) (cond-predicate first))
                              (expand-clauses rest))
                     (make-if (cond-predicate first)
                              (sequence->exp (cond-actions first))
