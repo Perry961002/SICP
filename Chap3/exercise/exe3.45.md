@@ -1,4 +1,4 @@
-```
+```scheme
 (define (make-account-and-serializer balance)
   (define (withdraw amount)
     (if (>= balance amount)

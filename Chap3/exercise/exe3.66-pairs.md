@@ -1,4 +1,4 @@
-```
+```scheme
 ;将两个序对交替取出
 ; s1,t1,s2,t2,...,si,ti,...
 (define (interleave s t)

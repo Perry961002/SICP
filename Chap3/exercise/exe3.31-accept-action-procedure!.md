@@ -1,5 +1,5 @@
 - 先看一下inverter过程的代码
-```
+```scheme
 (define (inverter input output)
     (define (invert-input)
         (let ((new-value (logical-not (get-signal input))))
