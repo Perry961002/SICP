@@ -18,6 +18,9 @@
 ;(display-top10 (pairs integers integers))
 ;(1 1)  (1 2)  (2 2)  (1 3)  (2 3)  (1 4)  (3 3)  (1 5)  (2 4) 
 ```
+
+- 为了下面数学公式的美观性，我用专业的Markdown软件写完后导出成了PDF文件([exe3.66.pdf](https://github.com/Perry961002/Learning-notes-of-SICP/blob/master/Chap3/exercise/exe3.66.pdf))，需要的话可以移步查看
+
 - 以Pa(S, T)表示序对(Si, Tj)组成的流，其中(i <= j 且 i, j > 0)。对这个流有如下描述：
 ```
     流的第一个序对是 (S1, T1)，其他部分是流 {(S1, T2), (S1, T3), ...} 和 Pa(S.r, T.r) 中的序对元素按交叉顺序出现的流。
