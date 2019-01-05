@@ -1,0 +1,178 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+\usepackage[unicode=true]{hyperref}
+\hypersetup{
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\newenvironment{Shaded}{}{}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+\date{}
+
+\begin{document}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{;将两个序对交替取出}
+\CommentTok{; s1,t1,s2,t2,...,si,ti,...}
+\NormalTok{(}\KeywordTok{define}\FunctionTok{ }\NormalTok{(interleave s t)}
+\NormalTok{    (}\KeywordTok{if}\NormalTok{ (stream-empty? s)}
+\NormalTok{        t}
+\NormalTok{        (stream-cons (stream-car s)}
+\NormalTok{                     (interleave t (stream-cdr s)))))}
+\CommentTok{;序对流}
+\NormalTok{(}\KeywordTok{define}\FunctionTok{ }\NormalTok{(pairs s t)}
+\NormalTok{    (stream-cons}
+\NormalTok{        (}\KeywordTok{list}\NormalTok{ (stream-car s) (stream-car t))}
+\NormalTok{        (interleave}
+\NormalTok{            (stream-map (}\KeywordTok{lambda}\NormalTok{ (x) (}\KeywordTok{list}\NormalTok{ (stream-car s) x))}
+\NormalTok{                        (stream-cdr t))}
+\NormalTok{            (pairs (stream-cdr s) (stream-cdr t)))))}
+
+\CommentTok{;(display-top10 (pairs integers integers))}
+\CommentTok{;(1 1)  (1 2)  (2 2)  (1 3)  (2 3)  (1 4)  (3 3)  (1 5)  (2 4) }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{itemize}
+\item
+  以\(Pa(S, T)\)表示序对\((S_i, T_j)\)组成的流，其中\((i \le j\  且\ i, j > 0)\)。对这个流有如下描述：
+
+  流的第一个序对是
+  \((S_1, T_1)\)，其他部分是流\( \begin{Bmatrix}(S_1, T_2), (S_1, T_3), \cdots\end{Bmatrix} \)和
+  \(Pa(S.r, T.r) \)中的序对元素按交叉顺序出现的流。(其中\(S.r\)表示流\(S\)中第一个元素之外的其他元素，用
+  \(\langle a, b \rangle\) 表示流 \(a,\ b\)
+  中的元素按交叉顺序出现)，则有
+
+  \[Pa(S, T) = \begin{Bmatrix}(S_1, T_1), \langle\ \begin{Bmatrix}(S_1, T_2), (S_1, T_3), \cdots\end{Bmatrix}，Pa(S.r, T.r)\  \rangle \end{Bmatrix}\]
+\end{itemize}
+
+\begin{itemize}
+\item
+  用 \(F(i, j)\) 表示序对\( (S_i, T_j)\) 到序对\( (S_1, T_1)\)
+  的距离，结合上面的描述，我们递归的给出这个函数表达式：
+
+   假设分别从 \(S \)和 \(T\) 的第 \(i-1 \)和
+  \(j-1 \)的位置开始构造，可以得到下面的一个流(为了方便，这里仅用下标表示元素)：
+
+  \[\cdots, (i-1, j-1), (i-1, j), (i, j), (i-1, j+1), \cdots\]
+
+   我们知道序对\( (i-1, j-1) \)到首序对的距离为
+  \(F(i-1, j-1)\)，结合\(Pa(S, T)\)的数学描述，明显的我们可以得到
+
+  \[F(i ,j) = 2 * F(i-1, j-1) + 2\]
+
+  特殊的，我们知道 \(F(1, 1) = 0，F(1, j) = 2 * j - 3，(j > 1)\)。
+
+  一般的，当 \( i = j\) 时，有
+
+  \begin{eqnarray*}
+  F(i ,j) &=& 2 * F(i-1, j-1) + 2\\
+  &\vdots&\\
+  \         &=& 2^{(i-1)}*F(1, 1) + 2 + 2^2 + ... + 2^{(i-1)}\\
+  &=& 2^i - 2\\
+  \end{eqnarray*}
+\end{itemize}
+
+ 当 \( i < j\) 时，我们可以知道 \( i \) 一定会先被减到 \(1\)
+，所以我们可以得到
+
+\begin{eqnarray*}
+  F(i ,j) &=& 2^{(i-1)}*F(1, j-i+1) + 2 + 2^2 + ... + 2^{(i-1)}\\
+  &\vdots&\\
+  &=& 2^i * (j-i) + 2^{(i-1)}-2
+  \end{eqnarray*}
+
+\begin{itemize}
+\item
+  按照上面的\(F(1, 100) = 197\)，并且代码验证
+  \texttt{(stream-ref\ (pairs\ integers\ integers)\ 197)}，得到\texttt{(1,\ 100)}
+\item
+  那么\(F(100, 100) = 2^{100} - 2\)
+\end{itemize}
+
+\end{document}
