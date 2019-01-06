@@ -49,12 +49,14 @@
 
 ## 案例和习题代码
 
+- 感谢我的同学[Mo-lemon](https://github.com/Mo-lemon)帮助我将之前习题中手绘的环境模型图用Visio重新绘制。
+
 - 如果代码中有错误或者有疑惑，欢迎通过[Issues](https://github.com/Perry961002/Learning-notes-of-SICP/issues)指出或者邮箱Perry961002@163.com联系我。
 
 | 章节(Chapter) |  01  |  02  |  03  |  04  |  05  |
 |:-------------:|:----:|:----:|:----:|:----:|:----:|
-| 案例(Example) | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap1/example) |  [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap2/example) | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap3/example) | --- | --- |
-| 习题(Exercises) | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap1/exercise)  | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap2/exercise) | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap3/exercise) | --- | --- |
+| 案例(Example) | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap1/example) |  [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap2/example) | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap3/example) | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap3/example) | --- |
+| 习题(Exercises) | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap1/exercise)  | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap2/exercise) | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap3/exercise) | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap3/exercise) | --- |
 
 ## Scheme实现几个经典算法
 
