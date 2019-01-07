@@ -11,8 +11,7 @@
 ```
 
 - `简单分析一下loop过程的代码可以知道，它将x翻转之后把cdr指针指向了y。`
-<p align="center">
-  <img src="https://github.com/Perry961002/Learning-notes-of-SICP/blob/master/Chap3/exercise/exe3.14-loop/a.jpg" alt="a"/>
-</p>
+
+  ![](a.jpg)
 
 `因此mystery就是将x翻转。`

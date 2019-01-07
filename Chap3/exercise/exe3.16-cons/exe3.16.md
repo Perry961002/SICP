@@ -28,6 +28,4 @@
 (set-car! w3 w1)
 (count-pairs w1) ; ==> 死循环
 ```
-<p align="center">
-  <img src="https://github.com/Perry961002/Learning-notes-of-SICP/blob/master/Chap3/exercise/exe3.16-cons/a.jpg" alt="a"/>
-</p>
+![](a.jpg)
