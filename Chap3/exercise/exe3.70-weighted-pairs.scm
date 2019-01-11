@@ -34,8 +34,8 @@
 (define q
     (stream-filter (lambda (x)
                         (let ((i (car x)) (j (cadr x)))
-                            (or (divide? i 2) (divide? j 3) (divide? i 5)
-                                (divide? j 2) (divide? j 3) (divide? j 5))))
+                            (and (not (divide? i 2)) (not (divide? i 3)) (not (divide? i 5))
+                                 (not (divide? j 2)) (not (divide? j 3)) (not (divide? j 5)))))
                    (weight-pairs integers integers weight2)))
 (display-top10 q)
-;(1 2)  (1 3)  (2 2)  (1 4)  (1 5)  (2 3)  (1 6)  (2 4)  (3 3)  
+;(1 1)  (1 7)  (1 11)  (1 13)  (1 17)  (1 19)  (1 23)  (1 29)  (1 31) 
