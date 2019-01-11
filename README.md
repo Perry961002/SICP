@@ -11,6 +11,12 @@
 
 - [这边文章](http://blog.fujiji.com/why-structure-and-interpretation-of-computer-programs-matters/)分析了SICP这门课为什么这么重要，在开始学习SICP之前应该好好的读一下它。(英文原文:[Why Structure and Interpretation of Computer Programs matters](https://www.cs.berkeley.edu/~bh/sicp.html))
 
+## 读完SICP的感受!!!
+
+- 这里引用在简书上看的一句话:
+
+  **SICP有什么缺点吗？有！它会让你在精神得到满足之余，有一种孤独感。**
+
 ## 视频地址
 
 - [中译版视频专辑列表（优酷）](https://v.youku.com/v_show/id_XNTEzMDAyMTU2.html?f=18958522)，视频只能是入门，想要真的掌握SICP这门课应该去读纸质书并且认真完成书后的习题。
@@ -18,10 +24,9 @@
 ## 一点建议
 
 - 首先本书是一本非常经典的教材，也是非常有难度的书，很多内容、习题需要仔细揣摩才能领略其奥妙之处，所以想读完甚至是掌握精髓是很需要下功夫的。
-
 - 其次，在阅读时，请务必全神贯注，并使用一整段的时间来学习每一小节并认真思考习题，否则很难有所收获。
-
 - 最后想说持续的学习总是很苦，所以当你学习SICP时觉得累、烦躁了，不妨停下来听听音乐，或者出去走走，总之一切放松的方式都行，但请记得这里还有许多富有趣味的题目亟待解决，它们等待你重新燃起热情去战胜。
+- 如果在学习过程中遇到觉得句子难以理解的地方可以去查看一下译者给出的[勘误表](http://www.math.pku.edu.cn/teachers/qiuzy/books/sicp/errata.htm), 不要问我为什么特意提这个, 你懂的...
 
 以上与所有的SICP的学习者共勉！！:tada:
 
