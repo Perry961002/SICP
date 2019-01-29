@@ -60,13 +60,13 @@
 
 | 章节(Chapter) |  01  |  02  |  03  |  04  |  05  |
 |:-------------:|:----:|:----:|:----:|:----:|:----:|
-| 案例(Example) | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap1/example) |  [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap2/example) | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap3/example) | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap3/example) | --- |
-| 习题(Exercises) | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap1/exercise)  | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap2/exercise) | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap3/exercise) | [Code](https://github.com/Perry961002/Learning-notes-of-SICP/tree/master/Chap3/exercise) | --- |
+| 案例(Example) | [Code](Chap1/example) |  [Code](Chap2/example) | [Code](Chap3/example) | [Code](Chap3/example) | --- |
+| 习题(Exercises) | [Code](/Chap1/exercise)  | [Code](Chap2/exercise) | [Code](Chap3/exercise) | [Code](Chap3/exercise) | --- |
 
 ## Scheme实现几个经典算法
 
-- [快速排序(QuickSort)](https://github.com/Perry961002/Learning-notes-of-SICP/blob/master/little%20practice/quicksort.scm)
+- [快速排序(QuickSort)](little%20practice/quicksort.md)
 
-- [归并排序(MergeSort)](https://github.com/Perry961002/Learning-notes-of-SICP/blob/master/little%20practice/merge-sort.scm)
+- [归并排序(MergeSort)](little%20practice/merge-sort.md)
 
-- [堆排序(HeapSort)](https://github.com/Perry961002/Learning-notes-of-SICP/blob/master/little%20practice/HeapSort.scm)
+- [堆排序(HeapSort)](little%20practice/HeapSort.md)
