@@ -22,6 +22,7 @@
 - **归并排序**
   - 每次选取列表的头两个元素进行合并然后舍弃，并将合并之后元素放置列表末尾，继续对新列表进行归并排序，直到列表中只有一个元素.
 
+![](imgs/mergesort.png)
 ```scheme
 (define (merge-sort L)
     (define (transform x)
