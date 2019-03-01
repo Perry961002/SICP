@@ -38,7 +38,7 @@
 
 - Dec 12, 2018 ~ Dec 30, 2018 --- 第3章 《模块化、对象和状态》
 
-- Jan 1, 2019 ~ Now --- 第4章 《元语言抽象》
+- Mar 1, 2019 ~ Now --- 第4章 《元语言抽象》
 
 ## 配置环境
 
@@ -60,8 +60,8 @@
 
 | 章节(Chapter) |  01  |  02  |  03  |  04  |  05  |
 |:-------------:|:----:|:----:|:----:|:----:|:----:|
-| 案例(Example) | [Code](Chap1/example) |  [Code](Chap2/example) | [Code](Chap3/example) | [Code](Chap3/example) | --- |
-| 习题(Exercises) | [Code](/Chap1/exercise)  | [Code](Chap2/exercise) | [Code](Chap3/exercise) | [Code](Chap3/exercise) | --- |
+| 案例(Example) | [Code](Chap1/example) |  [Code](Chap2/example) | [Code](Chap3/example) | [Code](Chap4/example) | --- |
+| 习题(Exercises) | [Code](/Chap1/exercise)  | [Code](Chap2/exercise) | [Code](Chap3/exercise) | [Code](Chap4/exercise) | --- |
 
 ## Scheme实现几个经典算法
 
