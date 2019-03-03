@@ -29,5 +29,8 @@
     (map (lambda (proc) (list 'primitive (cadr proc)))
          primitive-procedures))
 
+(define apply-in-underlying-scheme apply)
+
 (define (apply-primitive-procedure proc args)
-    (apply (primitive-implementation proc) args))
+    (apply-in-underlying-scheme 
+        (primitive-implementation proc) args))
