@@ -1,5 +1,8 @@
 (define (let? exp) (tagged-list? exp 'let))
 
+(define (let-bindings exp)
+  (cadr exp))
+
 (define (let-vars exp)
     (map car (cadr exp)))
 
@@ -12,6 +15,9 @@
 (define (let-combination exp)
     (cons (make-lambda (let-vars exp) (let-body exp))
           (let-exps exp)))
+
+(define (make-let bindings body)
+  (list 'let bindings body))
 
 (define (eval exp env)
   (cond ((self-evaluating? exp) exp)
