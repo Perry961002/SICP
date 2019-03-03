@@ -1,5 +1,3 @@
-(load "Chap4\exercise\exe4.6-let.scm")
-
 ;判断函数
 (define (let*? exp)
     (taggesd-list exp 'let*))

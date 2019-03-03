@@ -1,5 +1,3 @@
-(load "Chap4\exercise\exe4.6-let.scm")
-
 ;对于书上的解释，对(let <var> <bindings> <body>)
 ;body其实就是var的过程体，参数就是bindings
 ;即先把var定义为以bindings中的vars为参数、以body为过程体的过程
