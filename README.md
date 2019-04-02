@@ -10,6 +10,7 @@
 ## 为什么SICP那么重要！！！
 
 - [这边文章](http://blog.fujiji.com/why-structure-and-interpretation-of-computer-programs-matters/)分析了SICP这门课为什么这么重要，在开始学习SICP之前应该好好的读一下它。(英文原文:[Why Structure and Interpretation of Computer Programs matters](https://www.cs.berkeley.edu/~bh/sicp.html))
+- 如果对于理论基础**λ-演算**有兴趣的话可以读一下存储库里给出的[PDF文档](lambda演算.pdf)。
 
 ## 读完SICP的感受!!!
 
