@@ -1,5 +1,5 @@
 # 《计算机程序的构造和解释》---SICP学习记录
-![](https://img.shields.io/badge/language-Scheme-orange.svg) [![MIT license](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/Perry961002/Learning-notes-of-SICP/blob/master/LICENSE) [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
+![](https://img.shields.io/badge/language-Scheme-orange.svg) [![MIT license](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/Perry961002/Learning-notes-of-SICP/blob/master/LICENSE)
 
 ## A language isn’t something you learn so much as something you join. ( 语言不是你学习的东西，而是你加入的东西。)
 
@@ -10,7 +10,8 @@
 ## 为什么SICP那么重要！！！
 
 - [这边文章](http://blog.fujiji.com/why-structure-and-interpretation-of-computer-programs-matters/)分析了SICP这门课为什么这么重要，在开始学习SICP之前应该好好的读一下它。(英文原文:[Why Structure and Interpretation of Computer Programs matters](https://www.cs.berkeley.edu/~bh/sicp.html))
-- 如果对于理论基础**λ-演算**有兴趣的话可以读一下存储库里给出的[PDF文档](lambda演算.pdf)。
+- 如果对于理论基础**λ-演算**有兴趣的话可以读一下存储库里给出的文档：[lambda演算](lambda演算.pdf)。
+- 现在绝大多数的计算理论都是讨论的图灵机的理论，但是可能使用lambda演算理论会有不一样的效果，王垠大神也对此有所讨论，并推荐了一本有关的书籍[《程序设计视角下的可计算和复杂性理论》](程序视角下的可计算和复杂性理论.pdf)（已收录在存储库中）。
 
 ## 读完SICP的感受!!!
 
