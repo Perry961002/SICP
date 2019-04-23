@@ -19,9 +19,12 @@
 
   **SICP有什么缺点吗？有！它会让你在精神得到满足之余，有一种孤独感。**
 
-## 视频地址
+- 目前为止基本读完了前4章的内容，并在我的博客上给出了[专题总结](<https://perry96.com/tags/SICP/>)，并整理了各章的课后习题解答。
+
+## 视频及课件
 
 - [中译版视频专辑列表（优酷）](https://v.youku.com/v_show/id_XNTEzMDAyMTU2.html?f=18958522)，视频只能是入门，想要真的掌握SICP这门课应该去读纸质书并且认真完成书后的习题。
+- 文件夹`Courseware of Peking University`收集了本书的译者---北大教授裘宗燕的[教学课件](Courseware of Peking University)。
 
 ## 一点建议
 
