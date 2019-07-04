@@ -1,0 +1,16 @@
+(rule (can-replace ?p1 ?p2)
+      (and (not (same ?p1 ?p2))
+           (job ?p1 ?job1)
+           (job ?p2 ?job2)
+           (or (same ?job1 ?job2)
+               (can-do-job ?job1 job2))))
+
+; a)
+(can-replace ?person (Fect Cy D))
+
+; b)
+(and (can-replace ?p1 ?p2)
+     (salary ?p1 ?s1)
+     (salary ?p2 ?s2)
+     (salary (Fect Cy D) ?s3)
+     (lisp-value > ?s2 ?s3))
